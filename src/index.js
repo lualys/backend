@@ -12,10 +12,8 @@ app.use(routes)
 const PORT = process.env.PORT
 
 mongoose.connect(
-    process.env.DATABASE_URL, 
-    {
-        useNewUrlParser: true, 
-    }
+    process.env.DATABASE_URL
+    
 );
 
 app.listen(PORT, () => {
